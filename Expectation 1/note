@@ -1,0 +1,27 @@
+Numeral:
+public String toString(){
+	return value;
+}
+
+BinaryExpression:
+abstract toString()
+
+
+Addition:
+
+public Sting toString(){
+	return left.toString() + "+" + right.toString();
+}
+
+Division:
+
+public Sting toString(){
+	return left.toString() + "/" + right.toString();
+}
+
+Experession x = new Numeral(1);
+x.toString(); //line 2
+
+BinaryExperssion b = new Addition(x, x);
+b.toString(); //line 12, 2, 2
+
